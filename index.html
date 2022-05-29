@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Formulario de peliculas</title>
+        <link rel="stylesheet" href="styles.css">
+      </head>
+      
+      <body>
+        <h1 id="title" class="text-center">Movies</h1>
+        <p id="description">Thanks for taking a time to respond</p>
+        <form id="survey-form" method="post">
+          <div>
+            <label id="name-label" for="name">Name</label>
+            <br>
+            <input type="text" name="name" class="info" id="name" placeholder="Enter your name" required />
+          </div>
+          <br>
+          <div>
+            <label id="email-label" for="email">Email</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required class="info" />
+          </div>
+          <br>
+          <div>
+            <label id="number-label" for="age" class="form-control">Age (Optional)</label>
+            <br>
+            <input type="number" name="number" id="number" placeholder="Age" min="10" max="99" required class="info" />
+          </div>
+          <div>
+            <p>
+              Which option best describes your current role?
+            </p>
+            <select id="dropdown" name="role" required class="dropdown">
+              <option disabled selected value>Select current role</option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Full Time Learner</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <p>Which you gender of movies favourite</p>
+            <label>
+              <input name="user-favourite" value="Horror" type="radio" class="input-radio" checked />
+              Horror</label>
+            <label>
+              <input name="user-favourite" value="Comedy" type="radio" class="input-radio" />
+              Comedy</label>
+            <label>
+              <input name="user-favourite" value="Action" type="radio" class="input-radio" />
+              Action</label>
+            <label>
+              <input name="user-favourite" value="Drama" type="radio" class="input-radio" />
+              Drama</label>
+          </div>
+          <div>
+            <p>Who do you prefer as a companion to watch movies?</p>
+            <label>
+              <input name="user-company" value="family" type="radio" class="input-radio" checked />
+              Family</label>
+            <label>
+              <input name="user-company" value="friends" type="radio" class="input-radio" />
+              Friends</label>
+            <label>
+              <input name="user-company" value="couple" type="radio" class="input-radio" />
+              Couple</label>
+            <label>
+              <input name="user-company" value="alone" type="radio" class="input-radio" />
+              Alone</label>
+          </div>
+          <div>
+            <p>which streaming services you had?</p>
+            <label><input name="user-company" value="Netflix" type="checkbox" class="input-radio" />
+              Netflix</label>
+            <label><input name="user-company" value="Disneyplus" type="checkbox" class="input-radio" />
+              Disney Plus</label>
+            <label><input name="user-company" value="HBO max" type="checkbox" class="input-radio" />
+              HBO max</label>
+            <label><input name="user-company" value="AmazonPrime" type="checkbox" class="input-radio" />
+              Amazon Prime</label>
+            <label><input name="user-company" value="Mubi" type="checkbox" class="input-radio" />
+              Mubi</label>
+            <label><input name="user-company" value="Other" type="checkbox" class="input-radio" />
+              Other</label>
+          </div>
+           <div>
+          <p> any suggestions? </p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder = "Enter you comment here"></textarea>
+        </div>
+        <div> <button type="submit" id="submit" class="submit-button">Submit</button></div>
+        </form>
+      </body>
